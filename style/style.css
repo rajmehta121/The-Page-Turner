@@ -1,0 +1,121 @@
+
+.top-nav ul{
+    margin-top: 2px;
+    margin-bottom: 0;
+    overflow: hidden;
+    list-style-type: none;
+    background-color: #333333;
+    font-family: sans-serif;
+    height: 45px
+}
+.top-nav li{
+    float: right;
+}
+.top-nav li a{
+    display: block;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 300ms linear;
+}
+
+.top-nav li a:hover:not(.active) {
+    background-color: #111111;
+}
+.top-nav .active{
+    background-color: #4f7895;
+}
+h1{
+    background-color: white;
+}
+p{
+    margin: 100px;
+    font-family: sans-serif;   
+}
+.bottom-nav ul{
+    overflow: hidden;
+    list-style-type: none;
+    background-color: #333333;
+    font-family: sans-serif;
+}
+.bottom-nav li{
+    float: left;
+}
+.bottom-nav li a{
+    display: block;
+    color: white;
+    line-height: 40px; 
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.bottom-nav li a:hover{
+    text-decoration: underline;
+}
+.bottom-nav{
+    background-color: #333333;
+}
+#image-bottom img
+{
+    border-radius: 50%;
+}
+#howitworkstitle{
+    text-align: center;
+    color: #2d4455;
+    font-size: 50px;
+}
+.howitworks img{
+    float: right;
+    height:200;
+    width: 200;
+}
+.howitworks{
+    display: flex;
+}
+.howitworks p{
+    width: 800px;
+}
+.behindthescenes{
+    background-color:gainsboro;
+    display:flex;
+}
+#behindthescenestitle{
+    text-align: center;
+    color: #2d4455;
+    font-size: 50px; 
+}
+.behindthescenes img{
+    float: left;
+    height:100;
+    width:100;  
+}
+.bottomlink{
+    margin-left: 80px;
+}
+.button{
+    border: none;
+    margin-left: 30%;
+    height: 10px;
+    background-color: skyblue;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 15px;
+    transition: background-color 300ms linear;
+}
+.button:hover{
+    background-color: #4f7895;
+}
+#subscribebutton{
+    background-color: #71acd6;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px;
+    color: black;
+    margin-left: 70px;
+    transition: background-color 300ms linear;
+}
+#subscribebutton:hover{
+    background-color: #4f7895;
+}
