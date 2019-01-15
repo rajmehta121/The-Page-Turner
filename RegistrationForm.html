@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>ThePageTurner|Registration</title>
+    <link rel="stylesheet" type="text/css" href="./style/formstyle.css">
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+    <script src="formvalidation.js">
+    </script>
+    <style>
+    .parallax {
+        background-image: url("./images/booksregistration.jpg");
+        min-height: 500px; 
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    </style>
+</head>
+<body style="margin: 0">
+    <div style="position: fixed;width: 100%;background-color: white;height: 93px">
+    <h1 style="color: #436780;font-size: 50px;margin-bottom: 0;margin-top: 0;font-style: italic">The Page Turner</h1>
+    <div class="top-nav">
+        <ul>        
+            <li><a class="active" href="login.html">Log-in</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="subscription.html">Subscription</a></li>
+            <li><a href="home.html">Home</a></li>
+        </ul>
+    </div>
+    </div>
+    <br><br><br>
+    <div class="parallax"><br><br><br>
+        <h3 style="text-align: center;font-size: 40px;color: white">Registration form</h3>
+        <div id="box" style="background-color: white">
+            <br>
+            <form method="post" action="home.html" name="frmReg" onSubmit="return validate();" onreset="return reset1()">
+                First name:<br>
+                <input type="text" name="fname" placeholder="Enter first name" autofocus>
+                <span id="fnm" style="color:red;display:none;font-size: 15px">*Enter valid name</span><br>
+                Last name:<br>
+                <input type="text" name="lname" placeholder="Enter last name">
+                <span id="lnm" style="color:red;display:none;font-size: 15px">*Enter valid last name</span><br>
+                Address:<br>
+                <input type="text" name="addr" placeholder="Enter address">
+                <span id="ad" style="color:red;display:none;font-size: 15px">*Enter valid address</span><br>
+                Zip code:<br>
+                <input type="text" name="zip" placeholder="Enter zip code">
+                <span id="zip1" style="color: red;display: none;font-size: 15px">*Enter valid zip code</span><br>
+                Username:<br>
+                <input type="text" name="uname" placeholder="Enter Username">
+                <span id="unm" style="color:red;display:none;font-size: 15px">*Enter valid username</span><br>
+                E-mail:<br>
+                <input type="text" name="email" placeholder="Enter E-mail">
+                <span id="eml1" style="color:red;display:none;font-size: 15px">*Enter valid e-mail id.</span><span id="eml2" style="color:red;display:none;font-size: 15px">*The email address contains illegal characters.</span><br>
+                Phone number:<br>
+                <input type="text" placeholder="Enter phone number" name="phone">
+                <span id="ph" style="color:red;display:none;font-size: 15px">*Enter valid phone  no.</span><br>
+                Password:<br>
+                <input type="password" name="pwd" placeholder="Enter password">
+                <span id="pwdd" style="color:red;display:none;font-size: 15px">*Please Enter a password, more than 6 characters in length</span><br>
+                Re-Enter password:<br>
+                <input type="password" name="cpwd" placeholder="Re-Enter password">
+                <span id="pwd1" style="color:red;display:none;font-size: 15px">*Please confirm password.</span><span id="pwd2" style="color:red;display:none;font-size: 15px">*The two passwords does not match</span><br>
+                <input type="submit" name="cmdsubmit" value="Register" class="submit">
+                <input type="reset" name="cmdreset" value="Reset" onclick="reset1()" class="submit">
+            </form>
+        </div>
+        <br><br><br>
+    </div>
+        <div class="bottom-nav">
+        <ul style="margin: 0"> 
+            <div style="margin-left: 30%;margin-right: 30%;width: 40%">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="subscription.html" class="bottomlink">Subscription</a></li>
+                <li><a href="about.html" class="bottomlink">About us</a></li>
+                <li><a href="login.html" class="bottomlink">Log-in</a></li>
+            </div>
+        </ul>
+        <br>
+        <div id="image-bottom" style="margin-left: 45%;margin-right: 35%">>
+                <a href="https://www.facebook.com/" target="blank"><img src="./images/facebook-logo.png" width="30px"   height="30px"></a>
+                <a href="https://twitter.com/" target="blank"><img src="./images/twitterlogo.png" width="30px" height="30px"></a>
+                <a href="https://instagram.com/" target="blank"><img src="./images/instagram-logo.png" width="30px" height="30px"></a>
+        </div>
+    </div>
+</body>
+</html>
